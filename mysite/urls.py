@@ -18,12 +18,14 @@ Including another URLconf
 
 from django.conf.urls import url
 from django.contrib import admin
-from littleweb import views as littleweb_views
+from littleweb import views
+from littleweb import search
 
 
 urlpatterns = [
-    url(r'^add/$', littleweb_views.add, name="add"),
-    url(r'^', littleweb_views.index, name="index"),
-    #url(r'^add/(\d+)/(\d+)/$', littleweb_views.add),
-    url(r'^admin/', admin.site.urls),
+    url(r'^search-form/$', search.search_form, name="search-form"),
+    url(r'^search/$', search.search, name="search"),
+    url("", views.index, name="index"),
+    url(r'^add/(\d+)/(\d+)/$', views.add),
+    #url(r'^admin/', admin.site.urls),
 ]

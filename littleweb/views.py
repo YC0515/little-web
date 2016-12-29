@@ -8,8 +8,6 @@ def index(request):
     return render(request, "index.html")
 
 def add(request,a,b):
-    a = request.GET.get("a",0)
-    b = request.GET.get("b",0)
     c = int(a)+int(b)
     return HttpResponse(str(c))
 
