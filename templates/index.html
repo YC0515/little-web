@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bili_Live_Autotest</title>
+    <style>
+    h1  {
+        text-align: center;
+        color: #0000FF;
+        font-size: 50px;
+        text-shadow: 3px 3px 3px#111111;
+    }
+     h2 {
+         text-align: center;
+         color: lightcoral;
+         font-size: 40px;
+     }
+
+     body  {
+         text-align:center;
+     }
+
+    </style>
+    <script>
+        function change() {
+            document.getElementsByTagName('h1')[0].style.color = '#ff0000';
+        }
+    </script>
+</head>
+<body>
+    <div id="body1" style="background-color:lightpink">
+    <h1 onclick="change()">Test Home</h1>
+    <b><p>BILI 自动化平台</p></b>
+    <p>hello,{{user_name.name}}</p>
+        <!--<div id="login" href="/login.html">-->
+            <!--登入-->
+            <!--</div>-->
+    <a href="http://www.baidu.com"  target="_blank">百度</a>
+    <a href="http://live.bilibili.com" target="_blank">B站</a>
+    <a href="https://lol.qq.com" target="_blank">LOL官网</a>
+        <dl>
+            <li style="color: blueviolet">狐狸-阿狸</li>
+            <li>探险家-伊泽瑞尔</li>
+            <li>皮城女警-凯特琳</li>
+        </dl>
+
+    <hr>
+    </div>
+<!-- 这是一个注释 <br>（换行符号)-->
+    <div id="body2">
+    <h2>萌妹百科</h2>
+    <img src="http://i1.hdslb.com/bfs/face/e96ebe5b4a5573879cae668e8e961880344a5a38.jpg" alt="frist images" width="=300" height="400">
+    <table border="1">
+        <tr>
+            <th>名字</th>
+            <td>松冈祯丞 ,茅野爱衣</td>
+        </tr>
+        <tr>
+            <th>昵称</th>
+            <td>松冈爱衣 ,茅野祯丞</td>
+        </tr>
+    </table>
+    </div>
+
+<div id="页脚" style="background-color:lightpink;clear:both;text-align:center;">
+小龙所有 qinjing@bilibili.com
+</div>
+
+</body>
+</html>

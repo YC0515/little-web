@@ -5,4 +5,10 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse(u"hello qj！")
+    return render(request, "index.html")
+
+def add(request,a,b):
+    a = request.GET.get("a",0)
+    b = request.GET.get("b",0)
+    c = int(a)+int(b)
+    return HttpResponse(str(c))
