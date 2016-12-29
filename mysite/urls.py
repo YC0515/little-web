@@ -23,9 +23,10 @@ from littleweb import search
 
 
 urlpatterns = [
-    url(r'^search-form/$', search.search_form, name="search-form"),
+    url(r'^$', views.index),
+    url(r'index/$', views.index, name="index"),
+    url(r'^search_form/$', search.search_form, name="search-form"),
     url(r'^search/$', search.search, name="search"),
-    url("", views.index, name="index"),
-    url(r'^add/(\d+)/(\d+)/$', views.add),
-    #url(r'^admin/', admin.site.urls),
+    url(r'^add/(\d+)/(\d+)/$', views.add, name="add"),
+    url(r'^admin/', admin.site.urls),
 ]
