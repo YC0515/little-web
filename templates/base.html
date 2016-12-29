@@ -1,26 +1,15 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    {% if title %}
-    <title>{{title}} - qinjin</title>
-    {% else %}
-    <title>Bili_Live_Autotest</title>
-    {% endif %}
+    <title>Hello world!</title>
 </head>
-<body>
-    <div>qinjing: <a href="/index">Home</a></div>
-    <hr>
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    <ul>
-    {% for message in messages %}
-        <li>{{ message }} </li>
-    {% endfor %}
-    </ul>
-    {% endif %}
-    {% endwith %}
-    {% block content %}{% endblock %}
-  </body>
-</body>
+
+
+    <body>
+        <h1>Hello World!</h1>
+        {% block mainbody %}
+            <p>original</p>
+        {% endblock %}
+    </body>
 </html>
