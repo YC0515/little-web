@@ -12,3 +12,9 @@ def search(request):
     else:
         message = "你提交了空信息"
     return  HttpResponse(message)
+
+def search_post(request):
+    ctx = {}
+    if request.POST:
+        ctx['rlt'] = request.POST["keyword"]
+    return render(request, "post.html", ctx)

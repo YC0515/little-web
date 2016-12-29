@@ -25,7 +25,8 @@ from littleweb import search
 urlpatterns = [
     url(r'^$', views.index),
     url(r'index/$', views.index, name="index"),
-    url(r'^search_form/$', search.search_form, name="search-form"),
+    url(r'^search_form/$', search.search_form, name="search_form"),
+    url(r'^search_post/$', search.search_post, name="search_post"),
     url(r'^search/$', search.search, name="search"),
     url(r'^add/(\d+)/(\d+)/$', views.add, name="add"),
     url(r'^admin/', admin.site.urls),

@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,10 +16,6 @@
          font-size: 40px;
      }
 
-     body  {
-         text-align:center;
-     }
-
     </style>
     <script>
         function change() {
@@ -29,8 +26,12 @@
 <body>
     <div id="body1" style="background-color:lightpink">
     <h1 onclick="change()">Test Home</h1>
-    <b><p>BILI 自动化平台</p></b>
-    <p>hello,{{user_name.name}}</p>
+    <b style="font-size: 25px"><p>BILI 自动化平台</p></b>
+        <p style="font-size: 20px">欢迎 {{name}} ~~~!</p>
+        <p>{% for i in things %}
+            {{i}}
+            {% endfor %}
+        </p>
     <a href="http://www.baidu.com"  target="_blank">百度</a>
     <a href="http://live.bilibili.com" target="_blank">B站</a>
     <a href="https://lol.qq.com" target="_blank">LOL官网</a>

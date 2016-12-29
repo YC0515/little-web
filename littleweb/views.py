@@ -7,7 +7,9 @@ from django.core.urlresolvers import reverse
 # Create your views here.
 
 def index(request):
-    return render(request, "index.html")
+    name = "小龙"
+    things = ["前端", "服务端", "脚本", "攻略"]
+    return render(request, "index.html", {"name": name, "things": things})
 
 def add(request,a,b):
     c = int(a)+int(b)
